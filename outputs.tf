@@ -1,6 +1,6 @@
-output "environment" {
-  value       = var.environment
-  description = "Environment where this stack has been deployed to."
+output "wildcard_certificate_arn" {
+  description = "The ARN of the certificate"
+  value       = element(concat(aws_acm_certificate_validation.wildcard_cert.*.certificate_arn, aws_acm_certificate.wildcard_cert.*.arn, [""]), 0)
 }
 
 output "region" {
