@@ -10,7 +10,7 @@ output "hosted_zone_ns_records" {
 
 output "hosted_zone_arn" {
   description = "The ARN of the hosted zone"
-  value       = aws_route53_zone.this.zone_arn
+  value       = aws_route53_zone.this.arn
 }
 
 output "hosted_zone_id" {
