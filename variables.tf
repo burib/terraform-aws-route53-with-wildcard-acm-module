@@ -1,15 +1,6 @@
-variable "environment" {
+variable "domain" {
   description = <<EOF
-      Environment variable used to tag resources created by this module.
-
-      **Example values are:**
-        - temp
-        - dev
-        - staging
-        - prod
-
-      **Notes:**
-        Put here your notes if there is any.
+      name of the domain. For example: example.com
   EOF
   type        = string
 }

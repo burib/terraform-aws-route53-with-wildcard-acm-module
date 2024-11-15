@@ -22,7 +22,7 @@ resource "aws_acm_certificate_validation" "wildcard_cert" {
 resource "aws_route53_record" "wildcard_cert_validation" {
   name    = tolist(aws_acm_certificate.wildcard_cert.domain_validation_options)[0].resource_record_name
   type    = tolist(aws_acm_certificate.wildcard_cert.domain_validation_options)[0].resource_record_type
-  zone_id = var.should_create_hosted_zone ? aws_route53_zone.hosted_zone.zone_id : aws_route53_zone.this.zone_id
+  zone_id = aws_route53_zone.this.zone_id
   records = [
     tolist(aws_acm_certificate.wildcard_cert.domain_validation_options)[0].resource_record_value
   ]
