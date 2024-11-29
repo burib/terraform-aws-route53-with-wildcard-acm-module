@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.0...v0.2.1) (2024-11-29)
+
+
+### Bug Fixes
+
+* fix ipv6 record type ([5f67e50](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/5f67e50991514882e64ff12e22254ad6ec89bebc))
+
 ## [0.2.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.1.0...v0.2.0) (2024-11-29)
 
 
