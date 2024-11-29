@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.1.0...v0.2.0) (2024-11-29)
+
+
+### Features
+
+* create placeholder A records ([d958340](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/d958340111eb340cc9e82c852a547b831aac5af2))
+
 ## 0.1.0 (2024-11-15)
 
 
