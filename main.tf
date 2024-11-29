@@ -40,7 +40,7 @@ resource "aws_route53_record" "placeholder_a_record" {
 resource "aws_route53_record" "placeholder_aaaa_record" {
   zone_id = aws_route53_zone.this.zone_id
   name    = aws_route53_zone.this.name
-  type    = "A"
+  type    = "AAAA"
   ttl     = 300
   records = ["::1"]
 }
