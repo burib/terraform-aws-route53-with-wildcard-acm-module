@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.1...v0.2.2) (2024-11-29)
+
+
+### Bug Fixes
+
+* remove not needed A and AAAA records ([e363bd6](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/e363bd6745d7fca000f5a099fbee198cb7a57548))
+
 ## [0.2.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.0...v0.2.1) (2024-11-29)
 
 
