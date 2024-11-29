@@ -28,3 +28,19 @@ resource "aws_route53_record" "wildcard_cert_validation" {
   ]
   ttl = "60"
 }
+
+resource "aws_route53_record" "placeholder_a_record" {
+  zone_id = aws_route53_zone.this.zone_id
+  name    = aws_route53_zone.this.name
+  type    = "A"
+  ttl     = 300
+  records = ["127.0.0.1"]
+}
+
+resource "aws_route53_record" "placeholder_aaaa_record" {
+  zone_id = aws_route53_zone.this.zone_id
+  name    = aws_route53_zone.this.name
+  type    = "A"
+  ttl     = 300
+  records = ["::1"]
+}
