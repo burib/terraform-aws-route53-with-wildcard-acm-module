@@ -8,7 +8,7 @@
 # Usage example:
 ```terraform
 module "my_awesome_domain" {
-  source = "github.com/burib/terraform-route53-with-acm?ref=v0"
+  source = "github.com/burib/terraform-aws-route53-with-wildcard-acm-module?ref=v0"
 
   domain = local.is_prod ? "example.com" : "${var.environment}.example.com"
 }
