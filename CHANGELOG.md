@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.2...v0.3.0) (2025-01-04)
+
+
+### Features
+
+* save certificate arn into ssm ([#6](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/issues/6)) ([969b0d8](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/969b0d879197be7499d342fb4910768521e7a5a1))
+
 ## [0.2.2](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.1...v0.2.2) (2024-11-29)
 
 
