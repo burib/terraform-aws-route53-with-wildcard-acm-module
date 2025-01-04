@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.3.1...v0.4.0) (2025-01-04)
+
+
+### Features
+
+* save hosted zone id into ssm ([ed4006b](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/ed4006b8e7890dea8be322e7a96506586d29f1ff))
+
 ## [0.3.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.3.0...v0.3.1) (2025-01-04)
 
 
