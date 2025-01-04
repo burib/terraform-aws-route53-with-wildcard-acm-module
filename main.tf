@@ -28,3 +28,10 @@ resource "aws_route53_record" "wildcard_cert_validation" {
   ]
   ttl = "60"
 }
+
+resource "aws_ssm_parameter" "wildcard_cert_arn" {
+  name        = "/certificates/*.${aws_route53_zone.this.name}/arn"
+  value       = aws_acm_certificate.wildcard_cert.arn
+  description = "Certificate ARN of *.${aws_route53_zone.this.name}"
+  type        = "String"
+}
