@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.3.0...v0.3.1) (2025-01-04)
+
+
+### Bug Fixes
+
+* fix ssm path name ([a3f09e1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/a3f09e1c22a5a53dbfbe6b65e438920fc3cf86f5))
+
 ## [0.3.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.2.2...v0.3.0) (2025-01-04)
 
 
