@@ -10,6 +10,8 @@ resource "aws_acm_certificate" "wildcard_cert" {
   subject_alternative_names = [
     "*.${aws_route53_zone.this.name}"
   ]
+
+  provider = aws.us_east_1 # ACM certificates must be created in us-east-1 for CloudFront
 }
 
 resource "aws_acm_certificate_validation" "wildcard_cert" {
@@ -17,6 +19,7 @@ resource "aws_acm_certificate_validation" "wildcard_cert" {
   validation_record_fqdns = [
     aws_route53_record.wildcard_cert_validation.fqdn
   ]
+  provider = aws.us_east_1
 }
 
 resource "aws_route53_record" "wildcard_cert_validation" {
@@ -34,6 +37,7 @@ resource "aws_ssm_parameter" "hosted_zone_id" {
   value       = aws_route53_zone.this.zone_id
   description = "Route53 Hosted Zone ID for ${aws_route53_zone.this.name}"
   type        = "String"
+  overwrite   = true
 }
 
 resource "aws_ssm_parameter" "wildcard_cert_arn" {
@@ -41,4 +45,5 @@ resource "aws_ssm_parameter" "wildcard_cert_arn" {
   value       = aws_acm_certificate.wildcard_cert.arn
   description = "Wildcard Certificate ARN of *.${aws_route53_zone.this.name}"
   type        = "String"
+  overwrite   = true
 }

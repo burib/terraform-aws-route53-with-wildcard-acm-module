@@ -3,8 +3,9 @@ terraform {
 
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = ">= 5.0" # minimum 5.x is required to be able to use this module
+      source                = "hashicorp/aws"
+      version               = ">= 5.0" # minimum 5.x is required to be able to use this module
+      configuration_aliases = [aws.us_east_1]
     }
   }
 }
