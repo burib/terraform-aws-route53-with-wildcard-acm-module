@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.4.0...v0.4.1) (2025-05-09)
+
+
+### Bug Fixes
+
+* add us-east-1 as provider for certificate and certificate validation ([6a249d2](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/6a249d21084916457eec04ce52dfcae0ae0e5a09))
+
 ## [0.4.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.3.1...v0.4.0) (2025-01-04)
 
 
