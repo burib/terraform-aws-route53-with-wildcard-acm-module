@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.4.1...v0.5.0) (2025-07-01)
+
+
+### Features
+
+* save domain name to ssm ([bc84a51](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/commit/bc84a51d95279aa9502a43618f29b664363f5982))
+
 ## [0.4.1](https://github.com/burib/terraform-aws-route53-with-wildcard-acm-module/compare/v0.4.0...v0.4.1) (2025-05-09)
 
 
