@@ -40,6 +40,14 @@ resource "aws_ssm_parameter" "hosted_zone_id" {
   overwrite   = true
 }
 
+resource "aws_ssm_parameter" "hosted_zone_name" {
+  name        = "/zones/${replace(aws_route53_zone.this.name, ".", "-DOT-")}/name"
+  value       = var.domain
+  description = "Domain Name for ${aws_route53_zone.this.name}"
+  type        = "String"
+  overwrite   = true
+}
+
 resource "aws_ssm_parameter" "wildcard_cert_arn" {
   name        = "/certificates/${replace(aws_route53_zone.this.name, ".", "-DOT-")}/wildcard/arn"
   value       = aws_acm_certificate.wildcard_cert.arn
